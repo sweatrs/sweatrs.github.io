@@ -12,7 +12,7 @@
         font-family: "Fira Code";
         overflow: hidden; /* Prevent scrolling */
         min-height: 100vh;
-        min-height: -webkit-fill-available;
+        max-height: max-content;
       }
       h1 {
         color: rgb(216, 208, 208);
@@ -32,13 +32,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: -200px;
+        margin: auto;
         font-size: xx-large;
+        gap: 25px;
+        bottom: env(safe-area-inset-bottom);
       }
     </style>
     <title>sweat</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=yes"
+    />
     <meta name="description" content="swag" />
     <link href="assets/fontawesome/css/fontawesome.css" rel="stylesheet" />
     <link href="assets/fontawesome/css/brands.css" rel="stylesheet" />
