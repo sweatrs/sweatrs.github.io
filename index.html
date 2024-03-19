@@ -11,8 +11,8 @@
         background-color: rgb(40, 25, 82);
         font-family: "Fira Code";
         overflow: hidden; /* Prevent scrolling */
-        min-height: 100svh;
-        max-height: 100dvh;
+        height: 100%;
+        min-height: -webkit-fill-available;
       }
       h1 {
         color: rgb(216, 208, 208);
@@ -35,7 +35,6 @@
         margin: auto;
         font-size: xx-large;
         gap: 25px;
-        bottom: env(safe-area-inset-bottom);
       }
     </style>
     <title>sweat</title>
@@ -54,11 +53,11 @@
       <h1>sweat</h1>
     </div>
     <div class="info">
-      <a rel="me" href="https://wetdry.world/@sweat">
+      <a rel="me" aria-label="mastodon" href="https://wetdry.world/@sweat">
         <i class="fab fa-mastodon"></i>
       </a>
 
-      <a href="https://twitter.com/je_somerton"
+      <a aria-label="twitter" href="https://twitter.com/je_somerton"
         ><i class="fab fa-twitter"></i
       ></a>
     </div>
